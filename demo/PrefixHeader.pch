@@ -1,0 +1,73 @@
+
+// 常用的宏定义
+// 屏幕宽高
+#define LFScreenWidth 375.0
+#define LFScreenHeight 667.0
+//屏幕尺寸
+#define SCREENFRAME [[UIScreen mainScreen] bounds]  // 当前屏幕frmae
+#define SCREENWIDTH SCREENFRAME.size.width          // 当前屏幕宽度
+#define SCREENHEIGHT SCREENFRAME.size.height        // 当前屏幕高度
+#define SCREEN_MAX_LENGTH (MAX(SCREENWIDTH, SCREENHEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREENWIDTH, SCREENHEIGHT))
+
+
+
+#define H(X) ((SCREENFRAME.size.height) * ((X) / LFScreenHeight))    // 适配屏幕高度（以667为基准iphone6）
+#define W(X) ((SCREENFRAME.size.width) * ((X) / LFScreenWidth))     // 适配屏幕宽度（以375为基准iphone6）
+
+#define LFAutoLayoutX SCREENWIDTH/LFScreenWidth
+#define LFAutoLayoutY SCREENHEIGHT/LFScreenHeight
+
+//相对高度
+#define kLeft(VIEW)                 VIEW.frame.origin.x
+#define kUp(VIEW)                   VIEW.frame.origin.y
+#define kRight(VIEW)                (kLeft(VIEW) + VIEW.frame.size.width)
+#define kWidth(VIEW)                VIEW.frame.size.width
+#define kHeight(VIEW)               VIEW.frame.size.height
+#define kDown(VIEW)                 (VIEW.frame.origin.y + VIEW.frame.size.height)
+
+//系统版本
+#define kSystemVersion [[[UIDevice currentDevice] systemVersion]floatValue]
+//计算颜色
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+
+#define LFTabbarHeight 49
+#define LFImage(imgName) [UIImage imageNamed:imgName]
+
+// 字体
+#define LFFont(size) [UIFont systemFontOfSize:size]
+// JSON解析
+#define LFJson(data) [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil]
+// 设置图片路径
+#define LFSetImageUrl(url) [_iconIV setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"appproduct_appdefault"]]
+
+// 网络状态键
+#define LF_IsNetWork @"isNetWork"
+
+// 常用的文件
+#import "LFTool.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+
+//打印相关
+#ifdef DEBUG
+#define BXLog( s, ... )                          NSLog( @"<%@:(%d)> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define BXLog( s, ... )
+#endif
+
+
+CG_INLINE CGRect//注意：这里的代码要放在.m文件最下面的位置
+CGRectMake1(CGFloat x, CGFloat y, CGFloat width, CGFloat height)
+{
+    CGRect rect;
+    rect.origin.x = x * LFAutoLayoutX;
+    rect.origin.y = y * LFAutoLayoutY;
+    rect.size.width = width * LFAutoLayoutX;
+    rect.size.height = height *LFAutoLayoutY;
+    return rect;
+}
