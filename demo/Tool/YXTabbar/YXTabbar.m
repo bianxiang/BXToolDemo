@@ -41,7 +41,7 @@
 - (void)addItems {
     // 循环创建所有元素项
   
-    CGFloat w = LFScreenWidth/ kImgCount;
+    CGFloat w = SCREENWIDTH / kImgCount;
     CGFloat h = self.bounds.size.height;
     NSLog(@"%f",h);
     
