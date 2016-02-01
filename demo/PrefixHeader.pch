@@ -33,6 +33,7 @@
 
 #define LFTabbarHeight 49
 #define LFImage(imgName) [UIImage imageNamed:imgName]
+#define kFileURL(fileName) [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:fileName ofType:nil]]
 
 // 字体
 #define LFFont(size) [UIFont systemFontOfSize:size]
@@ -45,7 +46,7 @@
 #define LF_IsNetWork @"isNetWork"
 
 // 常用的文件
-#import "LFTool.h"
+#import "BXTool.h"
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "UIButton+WebCache.h"

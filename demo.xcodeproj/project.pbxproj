@@ -18,8 +18,6 @@
 		B12C51301C4CCF8B00BDDDD0 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51231C4CCF8B00BDDDD0 /* NSObject+MJKeyValue.m */; };
 		B12C51311C4CCF8B00BDDDD0 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51251C4CCF8B00BDDDD0 /* NSObject+MJProperty.m */; };
 		B12C51321C4CCF8B00BDDDD0 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51271C4CCF8B00BDDDD0 /* NSString+MJExtension.m */; };
-		B12C51381C4CCFD100BDDDD0 /* LFTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51351C4CCFD100BDDDD0 /* LFTool.m */; };
-		B12C51391C4CCFD100BDDDD0 /* LFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51371C4CCFD100BDDDD0 /* LFView.m */; };
 		B12C513D1C4CCFDC00BDDDD0 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C513C1C4CCFDC00BDDDD0 /* NSString+MD5.m */; };
 		B12C516B1C4CD13900BDDDD0 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51411C4CD13900BDDDD0 /* MJRefreshAutoFooter.m */; };
 		B12C516C1C4CD13900BDDDD0 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51431C4CD13900BDDDD0 /* MJRefreshBackFooter.m */; };
@@ -62,6 +60,8 @@
 		B157C48F1C3BBE570031DE55 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B157C47E1C3BBE570031DE55 /* IQToolbar.m */; };
 		B157C4901C3BBE570031DE55 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B157C4801C3BBE570031DE55 /* IQUIView+IQKeyboardToolbar.m */; };
 		B157C4911C3BBE570031DE55 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B157C4831C3BBE570031DE55 /* IQKeyboardManager.bundle */; };
+		B184DE431C5F4DEB0058A8AB /* BXTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B184DE401C5F4DEB0058A8AB /* BXTool.m */; };
+		B184DE441C5F4DEB0058A8AB /* BXView.m in Sources */ = {isa = PBXBuildFile; fileRef = B184DE421C5F4DEB0058A8AB /* BXView.m */; };
 		B1CF22D71C3D14A9006C21EA /* KKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CF22D61C3D14A9006C21EA /* KKNavigationController.m */; };
 		B1D073421C1E9180005AD0C0 /* YXItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D0733D1C1E9180005AD0C0 /* YXItem.m */; };
 		B1D073431C1E9180005AD0C0 /* YXTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D0733F1C1E9180005AD0C0 /* YXTabbar.m */; };
@@ -137,10 +137,6 @@
 		B12C51251C4CCF8B00BDDDD0 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		B12C51261C4CCF8B00BDDDD0 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		B12C51271C4CCF8B00BDDDD0 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
-		B12C51341C4CCFD100BDDDD0 /* LFTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFTool.h; sourceTree = "<group>"; };
-		B12C51351C4CCFD100BDDDD0 /* LFTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFTool.m; sourceTree = "<group>"; };
-		B12C51361C4CCFD100BDDDD0 /* LFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFView.h; sourceTree = "<group>"; };
-		B12C51371C4CCFD100BDDDD0 /* LFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFView.m; sourceTree = "<group>"; };
 		B12C513B1C4CCFDC00BDDDD0 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		B12C513C1C4CCFDC00BDDDD0 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		B12C51401C4CD13900BDDDD0 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -224,6 +220,10 @@
 		B157C4801C3BBE570031DE55 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		B157C4811C3BBE570031DE55 /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
 		B157C4831C3BBE570031DE55 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		B184DE3F1C5F4DEB0058A8AB /* BXTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXTool.h; sourceTree = "<group>"; };
+		B184DE401C5F4DEB0058A8AB /* BXTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXTool.m; sourceTree = "<group>"; };
+		B184DE411C5F4DEB0058A8AB /* BXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXView.h; sourceTree = "<group>"; };
+		B184DE421C5F4DEB0058A8AB /* BXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXView.m; sourceTree = "<group>"; };
 		B1CF22D51C3D14A9006C21EA /* KKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNavigationController.h; sourceTree = "<group>"; };
 		B1CF22D61C3D14A9006C21EA /* KKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNavigationController.m; sourceTree = "<group>"; };
 		B1D073361C1E913B005AD0C0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -353,17 +353,6 @@
 				B12C51271C4CCF8B00BDDDD0 /* NSString+MJExtension.m */,
 			);
 			path = MJExtension;
-			sourceTree = "<group>";
-		};
-		B12C51331C4CCFD100BDDDD0 /* LFTool */ = {
-			isa = PBXGroup;
-			children = (
-				B12C51341C4CCFD100BDDDD0 /* LFTool.h */,
-				B12C51351C4CCFD100BDDDD0 /* LFTool.m */,
-				B12C51361C4CCFD100BDDDD0 /* LFView.h */,
-				B12C51371C4CCFD100BDDDD0 /* LFView.m */,
-			);
-			path = LFTool;
 			sourceTree = "<group>";
 		};
 		B12C513A1C4CCFDC00BDDDD0 /* MD5加密 */ = {
@@ -602,6 +591,17 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B184DE3E1C5F4DEB0058A8AB /* BXTool */ = {
+			isa = PBXGroup;
+			children = (
+				B184DE3F1C5F4DEB0058A8AB /* BXTool.h */,
+				B184DE401C5F4DEB0058A8AB /* BXTool.m */,
+				B184DE411C5F4DEB0058A8AB /* BXView.h */,
+				B184DE421C5F4DEB0058A8AB /* BXView.m */,
+			);
+			path = BXTool;
+			sourceTree = "<group>";
+		};
 		B1CF22D41C3D14A9006C21EA /* KKNavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,11 +680,11 @@
 		B1D073351C1E90DC005AD0C0 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B13169091C3123FF003EEC03 /* BXNetWork */,
+				B184DE3E1C5F4DEB0058A8AB /* BXTool */,
 				B157A7931C58637F001796A2 /* UITextView+Placeholder */,
 				B157A78F1C58635E001796A2 /* Log */,
 				B12C513A1C4CCFDC00BDDDD0 /* MD5加密 */,
-				B12C51331C4CCFD100BDDDD0 /* LFTool */,
-				B13169091C3123FF003EEC03 /* BXNetWork */,
 				B1D0733B1C1E9180005AD0C0 /* YXTabbar */,
 			);
 			path = Tool;
@@ -955,10 +955,10 @@
 				B12C51701C4CD13900BDDDD0 /* MJRefreshAutoGifFooter.m in Sources */,
 				B1D073B81C1E92D7005AD0C0 /* MainTabbarController.m in Sources */,
 				B12C517A1C4CD13900BDDDD0 /* MJRefreshConst.m in Sources */,
+				B184DE441C5F4DEB0058A8AB /* BXView.m in Sources */,
 				B1D073981C1E9265005AD0C0 /* AFHTTPRequestOperationManager.m in Sources */,
 				B1DA24DE1C1E72270041C0F2 /* AppDelegate.m in Sources */,
 				B1D073AA1C1E9265005AD0C0 /* SDWebImageDecoder.m in Sources */,
-				B12C51381C4CCFD100BDDDD0 /* LFTool.m in Sources */,
 				B157C48E1C3BBE570031DE55 /* IQTitleBarButtonItem.m in Sources */,
 				B1D0739A1C1E9265005AD0C0 /* AFNetworkReachabilityManager.m in Sources */,
 				B1CF22D71C3D14A9006C21EA /* KKNavigationController.m in Sources */,
@@ -1002,7 +1002,6 @@
 				B157C4851C3BBE570031DE55 /* IQUITextFieldView+Additions.m in Sources */,
 				B12C517D1C4CD13900BDDDD0 /* UIView+MJExtension.m in Sources */,
 				B1D073991C1E9265005AD0C0 /* AFHTTPSessionManager.m in Sources */,
-				B12C51391C4CCFD100BDDDD0 /* LFView.m in Sources */,
 				B12C51731C4CD13900BDDDD0 /* MJRefreshBackGifFooter.m in Sources */,
 				B12C512D1C4CCF8B00BDDDD0 /* MJPropertyType.m in Sources */,
 				B12C517C1C4CD13900BDDDD0 /* UIScrollView+MJRefresh.m in Sources */,
@@ -1012,6 +1011,7 @@
 				B157A79B1C58637F001796A2 /* UITextView+Placeholder.m in Sources */,
 				B1D0734F1C1E91BA005AD0C0 /* FourViewController.m in Sources */,
 				B12C512F1C4CCF8B00BDDDD0 /* NSObject+MJCoding.m in Sources */,
+				B184DE431C5F4DEB0058A8AB /* BXTool.m in Sources */,
 				B131690C1C312400003EEC03 /* BXNetwork.m in Sources */,
 				B157C4901C3BBE570031DE55 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				B12C51291C4CCF8B00BDDDD0 /* MJExtensionConst.m in Sources */,

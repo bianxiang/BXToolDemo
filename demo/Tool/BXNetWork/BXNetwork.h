@@ -35,4 +35,14 @@ typedef void(^StatusBlock)(AFNetworkReachabilityStatus status);
  */
 + (void)postJSONWithUrl:(NSString *)url parameters:(id)parameters success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock;
 
+/**
+ *  JSON方式post上传图片
+ *   url          :服务器地址
+ *   parameters   :提交的参数内容
+ *   successBlock :请求成功的block
+ *   failureBlock :请求失败的block
+ */
++ (void)postJSONFileWithUrl:(NSString *)url fileURL:(NSURL *)fileURL parameters:(id)parameters success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock;
+
+
 @end

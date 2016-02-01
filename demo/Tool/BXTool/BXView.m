@@ -1,14 +1,15 @@
 //
-//  LFView.m
-//  zs
+//  BXView.m
+//  demo
 //
-//  Created by administrator on 11/2/15.
-//  Copyright © 2015 administrator. All rights reserved.
+//  Created by lejian on 16/2/1.
+//  Copyright © 2016年 lejiantech. All rights reserved.
 //
 
-#import "LFView.h"
+#import "BXView.h"
 
-@implementation LFView
+@implementation BXView
+
 
 + (UIImage *)resizeImage:(UIImage *)oldImg
 {
@@ -23,7 +24,7 @@
 {
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [leftBtn setTitle:title forState:UIControlStateNormal];
-    [leftBtn setBackgroundImage:[LFView resizeImage:[UIImage imageNamed:@"buttonbar_action"]] forState:UIControlStateNormal];
+    [leftBtn setBackgroundImage:[BXView resizeImage:[UIImage imageNamed:@"buttonbar_action"]] forState:UIControlStateNormal];
     leftBtn.frame = CGRectMake(0, 0, 60, 30);
     return leftBtn;
 }
@@ -67,13 +68,13 @@
 
 + (UIView *)clearWithImgName:(NSString *)imgName text:(NSString *)text vc:(UIViewController *)vc{
     UIView *clearView = [[UIView alloc] initWithFrame:CGRectMake1(0, 0, LFScreenWidth, LFScreenHeight)];
-  
+    
     clearView.backgroundColor = [UIColor whiteColor];
     [vc.view addSubview:clearView];
     UIImageView *noDeviceIV = [[UIImageView alloc] initWithFrame:CGRectMake1(137, 243, 150, 96)];
     noDeviceIV.image = LFImage(imgName);
     [clearView addSubview:noDeviceIV];
-        
+    
     CGFloat noDeviceIVHeight = CGRectGetMaxY(noDeviceIV.frame);
     UILabel *noDeviceLabel = [[UILabel alloc] initWithFrame:CGRectMake(W((LFScreenWidth-133)/2), noDeviceIVHeight, W(133), H(16))];
     noDeviceLabel.font = LFFont(12.0f);
@@ -84,6 +85,5 @@
     
     return clearView;
 }
-
 
 @end

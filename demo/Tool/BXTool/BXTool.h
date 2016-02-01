@@ -1,18 +1,18 @@
 //
-//  LFTool.h
-//  zs
+//  BXTool.h
+//  demo
 //
-//  Created by administrator on 11/2/15.
-//  Copyright © 2015 administrator. All rights reserved.
+//  Created by lejian on 16/2/1.
+//  Copyright © 2016年 lejiantech. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "BXView.h"
 
 typedef void(^SuccessBlock)(id data);
 typedef void(^FailureBlock)(NSError *error);
 
-@interface LFTool : NSObject
-
+@interface BXTool : NSObject
 + (void)setObject:(id)obj forKey:(NSString *)key;
 + (void)setBool:(BOOL)b forKey:(NSString *)key;
 
@@ -27,4 +27,8 @@ typedef void(^FailureBlock)(NSError *error);
 // 计算文本高度
 + (CGFloat)getTextHeightWithText:(NSString *)text width:(CGFloat)width font:(UIFont *)font;
 
++ (UIColor *)colorWithHexString:(NSString *)color;
+
+//获取当前时间
++ (NSString*)getCurrentTimeTypeOne;
 @end

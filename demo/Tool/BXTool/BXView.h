@@ -1,14 +1,15 @@
 //
-//  LFView.h
-//  zs
+//  BXView.h
+//  demo
 //
-//  Created by administrator on 11/2/15.
-//  Copyright © 2015 administrator. All rights reserved.
+//  Created by lejian on 16/2/1.
+//  Copyright © 2016年 lejiantech. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface LFView : UIView
+@interface BXView : UIView
+
 
 // 设置图片的拉伸点
 + (UIImage *)resizeImage:(UIImage *)oldImg;
