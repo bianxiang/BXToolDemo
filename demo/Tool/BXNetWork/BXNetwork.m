@@ -67,13 +67,13 @@
     // 网络请求类
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
+    // 解析格式 : 不设置具体的解析格式,只需要拿到数据
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
     //设置超时时间
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
     manager.requestSerializer.timeoutInterval = 30.f;
     [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
-    
-    // 解析格式 : 不设置具体的解析格式,只需要拿到数据
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     /** 参数
      1，请求路径
@@ -94,17 +94,16 @@
 {
     // 网络请求类
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+
+    // 设置请求格式为JSON
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    // 解析格式 : 不设置具体的解析格式,只需要拿到数据
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     //设置超时时间
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
     manager.requestSerializer.timeoutInterval = 30.f;
     [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
-
-    
-    // 设置请求格式为JSON
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    // 解析格式 : 不设置具体的解析格式,只需要拿到数据
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     /** 参数
      1，请求路径
@@ -130,15 +129,16 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
+    // 设置请求格式为JSON
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    // 解析格式 : 不设置具体的解析格式,只需要拿到数据
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
     //设置超时时间
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
     manager.requestSerializer.timeoutInterval = 30.f;
     [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     
-    // 设置请求格式为JSON
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    // 解析格式 : 不设置具体的解析格式,只需要拿到数据
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
         
