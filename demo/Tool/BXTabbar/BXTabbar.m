@@ -1,26 +1,26 @@
 //
-//  YXTabbar.m
-//  zs
+//  BXTabbar.m
+//  DaiTou
 //
-//  Created by administrator on 15/11/3.
-//  Copyright © 2015年 administrator. All rights reserved.
+//  Created by bianxiang on 16/3/15.
+//  Copyright © 2016年 bianxiang. All rights reserved.
 //
 
-#import "YXTabbar.h"
-#import "YXItem.h"
+#import "BXTabbar.h"
+#import "BXItem.h"
 #define kImgCount 5
 
-@interface YXTabbar()
+@interface BXTabbar()
 {
     NSArray *_titleArr;
     NSArray *_normalImgArr;
     NSArray *_selectedImgArr;
     
-    YXItem  *_previousItem;
+    BXItem  *_previousItem;
 }
 @end
 
-@implementation YXTabbar
+@implementation BXTabbar
 
 - (instancetype)initWithFrame:(CGRect)frame backgroundImg:(UIImage *)img titleArr:(NSArray *)titleArr normalImgArr:(NSArray *)normalImgArr selectedImgArr:(NSArray *)selectedImgArr {
     if (self = [super initWithFrame:frame]) {
@@ -40,13 +40,13 @@
 #pragma mark 添加所有按钮
 - (void)addItems {
     // 循环创建所有元素项
-  
+    
     CGFloat w = SCREENWIDTH / kImgCount;
     CGFloat h = self.bounds.size.height;
     NSLog(@"%f",h);
     
     for (int i = 0; i < kImgCount; i ++) {
-        YXItem *item = [YXItem itemWithFrame:CGRectMake(i * w, 0, w, h) tag:i normalImg:[_normalImgArr[i] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImg:[_selectedImgArr[i] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:_titleArr[i] titleColor:[UIColor whiteColor]];
+        BXItem *item = [BXItem itemWithFrame:CGRectMake(i * w, 0, w, h) tag:i normalImg:[_normalImgArr[i] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImg:[_selectedImgArr[i] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:_titleArr[i] titleColor:[UIColor whiteColor]];
         
         
         [item addTarget:self action:@selector(itemClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -58,31 +58,17 @@
     }
 }
 
-- (void)itemClicked:(YXItem *)item {
-    
-    
-    //    if (item.tag!=3) {
-    //        for (YXItem *item in self.subviews) {
-    //            if (item.tag==3) {
-    //                item.selected = NO;
-    //            }
-    //        }
+- (void)itemClicked:(BXItem *)item {
+
     _previousItem.selected = NO;
     item.selected = YES;
     _previousItem = item;
-    //    }
-    //    if (item.tag==3&&[LFTool boolForKey:LF_IsLogin]) {
-    //        _previousItem.selected = NO;
-    //        item.selected = YES;
-    //        _previousItem = item;
-    //    }
+ 
     
     
     if (_block) {
         _block(item.tag);
     }
 }
-
-
 @end
 

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YXTabbar.h"
+#import "BXTabbar.h"
 
 @interface MainTabbarController : UITabBarController
 
-@property (nonatomic,strong) YXTabbar *myTabbar;
+@property (nonatomic,strong) BXTabbar *myTabbar;
 @end

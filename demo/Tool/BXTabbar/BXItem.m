@@ -1,26 +1,26 @@
 //
-//  YXItem.m
-//  zs
+//  BXItem.m
+//  DaiTou
 //
-//  Created by administrator on 15/11/3.
-//  Copyright © 2015年 administrator. All rights reserved.
+//  Created by bianxiang on 16/3/15.
+//  Copyright © 2016年 bianxiang. All rights reserved.
 //
 
-#import "YXItem.h"
+#import "BXItem.h"
 
-@implementation YXItem
+@implementation BXItem
 
 + (instancetype)itemWithFrame:(CGRect)frame tag:(NSInteger)tag normalImg:(UIImage *)normalImg selectedImg:(UIImage *)selectedImg title:(NSString *)title titleColor:(UIColor *)titleColor
 {
     // 可变值通过参数传入
-    YXItem *item = [[YXItem alloc] initWithFrame:frame];
+    BXItem *item = [[BXItem alloc] initWithFrame:frame];
     item.tag = tag;
     
     [item setBackgroundImage:normalImg forState:UIControlStateNormal];
     [item setBackgroundImage:selectedImg forState:UIControlStateSelected];
     [item setTitle:title forState:UIControlStateNormal];
     [item setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [item setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
+    [item setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
     
     // 这些值是固定不变的.
     item.titleLabel.font = [UIFont systemFontOfSize:12.0f];
@@ -59,3 +59,4 @@
 
 
 @end
+

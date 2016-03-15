@@ -1,19 +1,19 @@
 //
-//  YXTabbar.h
-//  zs
+//  BXTabbar.h
+//  DaiTou
 //
-//  Created by administrator on 15/11/3.
-//  Copyright © 2015年 administrator. All rights reserved.
+//  Created by bianxiang on 16/3/15.
+//  Copyright © 2016年 bianxiang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 // 创建图片宏
-#define YXImage(imgName) [UIImage imageNamed:imgName]
+#define BXImage(imgName) [UIImage imageNamed:imgName]
 
 typedef void(^ItemClickedBlock)(NSInteger tag);
 
-@interface YXTabbar : UIView
+@interface BXTabbar : UIView
 
 /** Tabbar init method
  frame                   : frame

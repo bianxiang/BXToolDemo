@@ -7,7 +7,7 @@
 //
 
 #import "ThirdViewController.h"
-#import "YXItem.h"
+
 
 #define kMargin 5
 @interface ThirdViewController ()

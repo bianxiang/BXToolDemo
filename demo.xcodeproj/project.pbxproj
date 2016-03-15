@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89D652BA1C984AA400606C70 /* BXItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D652B71C984AA400606C70 /* BXItem.m */; };
+		89D652BB1C984AA400606C70 /* BXTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D652B91C984AA400606C70 /* BXTabbar.m */; };
 		B12C51281C4CCF8B00BDDDD0 /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51121C4CCF8B00BDDDD0 /* MJDictionaryCache.m */; };
 		B12C51291C4CCF8B00BDDDD0 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51151C4CCF8B00BDDDD0 /* MJExtensionConst.m */; };
 		B12C512A1C4CCF8B00BDDDD0 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51171C4CCF8B00BDDDD0 /* MJFoundation.m */; };
@@ -63,8 +65,6 @@
 		B184DE431C5F4DEB0058A8AB /* BXTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B184DE401C5F4DEB0058A8AB /* BXTool.m */; };
 		B184DE441C5F4DEB0058A8AB /* BXView.m in Sources */ = {isa = PBXBuildFile; fileRef = B184DE421C5F4DEB0058A8AB /* BXView.m */; };
 		B1CF22D71C3D14A9006C21EA /* KKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CF22D61C3D14A9006C21EA /* KKNavigationController.m */; };
-		B1D073421C1E9180005AD0C0 /* YXItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D0733D1C1E9180005AD0C0 /* YXItem.m */; };
-		B1D073431C1E9180005AD0C0 /* YXTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D0733F1C1E9180005AD0C0 /* YXTabbar.m */; };
 		B1D073461C1E919A005AD0C0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D073451C1E919A005AD0C0 /* FirstViewController.m */; };
 		B1D073491C1E91A2005AD0C0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D073481C1E91A2005AD0C0 /* SecondViewController.m */; };
 		B1D0734C1C1E91AC005AD0C0 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D0734B1C1E91AC005AD0C0 /* ThirdViewController.m */; };
@@ -114,6 +114,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89D652B61C984AA400606C70 /* BXItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXItem.h; sourceTree = "<group>"; };
+		89D652B71C984AA400606C70 /* BXItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXItem.m; sourceTree = "<group>"; };
+		89D652B81C984AA400606C70 /* BXTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXTabbar.h; sourceTree = "<group>"; };
+		89D652B91C984AA400606C70 /* BXTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXTabbar.m; sourceTree = "<group>"; };
 		B12C51111C4CCF8B00BDDDD0 /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
 		B12C51121C4CCF8B00BDDDD0 /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
 		B12C51131C4CCF8B00BDDDD0 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -227,10 +231,6 @@
 		B1CF22D51C3D14A9006C21EA /* KKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNavigationController.h; sourceTree = "<group>"; };
 		B1CF22D61C3D14A9006C21EA /* KKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNavigationController.m; sourceTree = "<group>"; };
 		B1D073361C1E913B005AD0C0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		B1D0733C1C1E9180005AD0C0 /* YXItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXItem.h; sourceTree = "<group>"; };
-		B1D0733D1C1E9180005AD0C0 /* YXItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXItem.m; sourceTree = "<group>"; };
-		B1D0733E1C1E9180005AD0C0 /* YXTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXTabbar.h; sourceTree = "<group>"; };
-		B1D0733F1C1E9180005AD0C0 /* YXTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXTabbar.m; sourceTree = "<group>"; };
 		B1D073441C1E919A005AD0C0 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		B1D073451C1E919A005AD0C0 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B1D073471C1E91A2005AD0C0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -325,6 +325,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89D652B51C984AA400606C70 /* BXTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				89D652B61C984AA400606C70 /* BXItem.h */,
+				89D652B71C984AA400606C70 /* BXItem.m */,
+				89D652B81C984AA400606C70 /* BXTabbar.h */,
+				89D652B91C984AA400606C70 /* BXTabbar.m */,
+			);
+			path = BXTabbar;
+			sourceTree = "<group>";
+		};
 		B12C51101C4CCF8B00BDDDD0 /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,25 +691,14 @@
 		B1D073351C1E90DC005AD0C0 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				89D652B51C984AA400606C70 /* BXTabbar */,
 				B13169091C3123FF003EEC03 /* BXNetWork */,
 				B184DE3E1C5F4DEB0058A8AB /* BXTool */,
 				B157A7931C58637F001796A2 /* UITextView+Placeholder */,
 				B157A78F1C58635E001796A2 /* Log */,
 				B12C513A1C4CCFDC00BDDDD0 /* MD5加密 */,
-				B1D0733B1C1E9180005AD0C0 /* YXTabbar */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		B1D0733B1C1E9180005AD0C0 /* YXTabbar */ = {
-			isa = PBXGroup;
-			children = (
-				B1D0733C1C1E9180005AD0C0 /* YXItem.h */,
-				B1D0733D1C1E9180005AD0C0 /* YXItem.m */,
-				B1D0733E1C1E9180005AD0C0 /* YXTabbar.h */,
-				B1D0733F1C1E9180005AD0C0 /* YXTabbar.m */,
-			);
-			path = YXTabbar;
 			sourceTree = "<group>";
 		};
 		B1D073531C1E9265005AD0C0 /* AFNetworking */ = {
@@ -933,6 +933,7 @@
 				B12C516D1C4CD13900BDDDD0 /* MJRefreshComponent.m in Sources */,
 				B12C51721C4CD13900BDDDD0 /* MJRefreshAutoStateFooter.m in Sources */,
 				B1D073AC1C1E9265005AD0C0 /* SDWebImageDownloaderOperation.m in Sources */,
+				89D652BA1C984AA400606C70 /* BXItem.m in Sources */,
 				B1D073B21C1E9265005AD0C0 /* UIImage+WebP.m in Sources */,
 				B1D073AE1C1E9265005AD0C0 /* SDWebImagePrefetcher.m in Sources */,
 				B12C512A1C4CCF8B00BDDDD0 /* MJFoundation.m in Sources */,
@@ -962,7 +963,6 @@
 				B157C48E1C3BBE570031DE55 /* IQTitleBarButtonItem.m in Sources */,
 				B1D0739A1C1E9265005AD0C0 /* AFNetworkReachabilityManager.m in Sources */,
 				B1CF22D71C3D14A9006C21EA /* KKNavigationController.m in Sources */,
-				B1D073431C1E9180005AD0C0 /* YXTabbar.m in Sources */,
 				B12C512B1C4CCF8B00BDDDD0 /* MJProperty.m in Sources */,
 				B1D073B31C1E9265005AD0C0 /* UIImageView+HighlightedWebCache.m in Sources */,
 				B1DA24DB1C1E72270041C0F2 /* main.m in Sources */,
@@ -970,7 +970,6 @@
 				B1D0739B1C1E9265005AD0C0 /* AFSecurityPolicy.m in Sources */,
 				B12C512E1C4CCF8B00BDDDD0 /* NSObject+MJClass.m in Sources */,
 				B157C48D1C3BBE570031DE55 /* IQBarButtonItem.m in Sources */,
-				B1D073421C1E9180005AD0C0 /* YXItem.m in Sources */,
 				B157C4841C3BBE570031DE55 /* IQNSArray+Sort.m in Sources */,
 				B1D0739D1C1E9265005AD0C0 /* AFURLRequestSerialization.m in Sources */,
 				B1D0734C1C1E91AC005AD0C0 /* ThirdViewController.m in Sources */,
@@ -992,6 +991,7 @@
 				B1D073AF1C1E9265005AD0C0 /* UIButton+WebCache.m in Sources */,
 				B1D073B41C1E9265005AD0C0 /* UIImageView+WebCache.m in Sources */,
 				B157A7A21C5863DF001796A2 /* MBProgressHUD+Extend.m in Sources */,
+				89D652BB1C984AA400606C70 /* BXTabbar.m in Sources */,
 				B157A79A1C58637F001796A2 /* README.md in Sources */,
 				B1D0739E1C1E9265005AD0C0 /* AFURLResponseSerialization.m in Sources */,
 				B12C51321C4CCF8B00BDDDD0 /* NSString+MJExtension.m in Sources */,

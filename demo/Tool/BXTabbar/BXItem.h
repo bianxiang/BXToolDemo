@@ -1,14 +1,14 @@
 //
-//  YXItem.h
-//  zs
+//  BXItem.h
+//  DaiTou
 //
-//  Created by administrator on 15/11/3.
-//  Copyright © 2015年 administrator. All rights reserved.
+//  Created by bianxiang on 16/3/15.
+//  Copyright © 2016年 bianxiang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface YXItem : UIButton
+@interface BXItem : UIButton
 
 /** 类方法创建
  frame           : frame

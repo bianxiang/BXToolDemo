@@ -66,7 +66,7 @@
 //    NSArray *selectedImgArr = @[[UIImage imageNamed:@"项目概括-选"],[UIImage imageNamed:@"区位价值-选"],[UIImage imageNamed:@"至臻产品-选"],[UIImage imageNamed:@"智能物管-选"],[UIImage imageNamed:@"品牌团队-选"]];
     
     CGRect rect = CGRectMake(0, 0, LFScreenWidth, LFTabbarHeight);
-    _myTabbar = [[YXTabbar alloc] initWithFrame:rect backgroundImg:nil titleArr:titleArr normalImgArr:nil selectedImgArr:nil];
+    _myTabbar = [[BXTabbar alloc] initWithFrame:rect backgroundImg:nil titleArr:titleArr normalImgArr:nil selectedImgArr:nil];
     
     __block MainTabbarController *myVC = self;
     _myTabbar.block = ^(NSInteger tag){
