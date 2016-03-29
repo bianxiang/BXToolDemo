@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@import CoreLocation;
+@import MapKit;
 @interface BXView : UIView
 
 
@@ -22,7 +23,10 @@
 
 // 创建标签视图
 + (UILabel *)createLabelWithFrame:(CGRect)frame font:(UIFont *)font;
-
+/**
+ *  创建按钮
+ */
++ (UIButton *)createButtonWithFrame:(CGRect)frame title:(NSString *)title titleColor:(UIColor *)color font:(UIFont *)font;
 // 弹出提示控制器
 + (void)alertWithMessage:(NSString *)message who:(UIViewController *)vc;
 
@@ -33,4 +37,18 @@
 
 + (UIView *)clearWithImgName:(NSString *)imgName text:(NSString *)text vc:(UIViewController *)vc;
 
+/**
+ *  地图选择器
+ */
++ (void)alertSelectedMapControllerWho:(UIViewController *)vc coordinate:(CLLocationCoordinate2D)coordinate placeName:(NSString*)placeName ;
+
+
+
++ (NSString *)getApplicationName;
++ (NSString *)getApplicationScheme;
+
+/**
+ *  按钮获取验证码的倒计时
+ */
++ (void)countDownWithBtn:(UIButton *)btn;
 @end

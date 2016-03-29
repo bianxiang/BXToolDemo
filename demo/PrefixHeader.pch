@@ -10,7 +10,10 @@
 #define SCREEN_MAX_LENGTH (MAX(SCREENWIDTH, SCREENHEIGHT))
 #define SCREEN_MIN_LENGTH (MIN(SCREENWIDTH, SCREENHEIGHT))
 
-
+#define kGrayColor [UIColor colorWithWhite:0.749 alpha:1.000]
+#define kBlackColor [UIColor blackColor]
+#define kThemeColor [UIColor colorWithRed:0.988 green:0.824 blue:0.224 alpha:1.000]
+#define kWhiteColor [UIColor whiteColor]
 
 #define H(X) ((SCREENFRAME.size.height) * ((X) / LFScreenHeight))    // 适配屏幕高度（以667为基准iphone6）
 #define W(X) ((SCREENFRAME.size.width) * ((X) / LFScreenWidth))     // 适配屏幕宽度（以375为基准iphone6）
@@ -60,7 +63,16 @@
 #else
 #define BXLog( s, ... )
 #endif
+// 从nib加载文件
+#define kViewFromNibNamed(n) [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([n class]) owner:self options:nil] lastObject]
+// 字符串
+#define kStringFormat(fmt,...) [NSString stringWithFormat:fmt,##__VA_ARGS__]
 
+//Push和Pop
+#define kPopViewController          [self.navigationController popViewControllerAnimated:YES]
+#define kPushViewController(VC)     [self.navigationController pushViewController:VC animated:YES]
+#define kPresentViewController(VC) [self presentViewController:VC animated:YES completion:nil]
+#define kDismissViewController [self dismissViewControllerAnimated:YES completion:nil]
 
 CG_INLINE CGRect//注意：这里的代码要放在.m文件最下面的位置
 CGRectMake1(CGFloat x, CGFloat y, CGFloat width, CGFloat height)

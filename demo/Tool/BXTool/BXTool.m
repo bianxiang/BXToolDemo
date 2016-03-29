@@ -143,4 +143,19 @@
     dmt.dateFormat = @"yyyy年MM月dd日HH:mm";
     return [dmt stringFromDate:[NSDate date]];
 }
+
+
++ (BOOL)isPhone:(NSString *)phone {
+    //手机号以13， 15，18开头，八个 \d 数字字符
+    NSString *phoneRegex = @"^((13[0-9])|(15[^4,\\D])|(18[0,0-9]))\\d{8}$";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [phoneTest evaluateWithObject:phone];
+}
+
++ (BOOL)isPassword:(NSString *)password {
+    NSString *passWordRegex = @"^[a-zA-Z0-9]{6,20}+$";
+    NSPredicate *passWordPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",passWordRegex];
+    return [passWordPredicate evaluateWithObject:password];
+}
+
 @end

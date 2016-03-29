@@ -31,4 +31,14 @@ typedef void(^FailureBlock)(NSError *error);
 
 //获取当前时间
 + (NSString*)getCurrentTimeTypeOne;
+
+/**
+ *  是否是手机
+ */
++ (BOOL)isPhone:(NSString *)phone;
+
+/**
+ *  是否是密码
+ */
++ (BOOL)isPassword:(NSString *)password;
 @end
