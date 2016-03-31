@@ -28,6 +28,7 @@
 		890B3A7C1CAA61C9008B1A6C /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 890B3A771CAA61C9008B1A6C /* UIView+Frame.m */; };
 		89D652BA1C984AA400606C70 /* BXItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D652B71C984AA400606C70 /* BXItem.m */; };
 		89D652BB1C984AA400606C70 /* BXTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D652B91C984AA400606C70 /* BXTabbar.m */; };
+		89F60CF31CACD0FD0023BF9A /* CALayer+Xib.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F60CF21CACD0FD0023BF9A /* CALayer+Xib.m */; };
 		B12C51281C4CCF8B00BDDDD0 /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51121C4CCF8B00BDDDD0 /* MJDictionaryCache.m */; };
 		B12C51291C4CCF8B00BDDDD0 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51151C4CCF8B00BDDDD0 /* MJExtensionConst.m */; };
 		B12C512A1C4CCF8B00BDDDD0 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C51171C4CCF8B00BDDDD0 /* MJFoundation.m */; };
@@ -182,6 +183,8 @@
 		89D652B71C984AA400606C70 /* BXItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXItem.m; sourceTree = "<group>"; };
 		89D652B81C984AA400606C70 /* BXTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXTabbar.h; sourceTree = "<group>"; };
 		89D652B91C984AA400606C70 /* BXTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXTabbar.m; sourceTree = "<group>"; };
+		89F60CF11CACD0FD0023BF9A /* CALayer+Xib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Xib.h"; sourceTree = "<group>"; };
+		89F60CF21CACD0FD0023BF9A /* CALayer+Xib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Xib.m"; sourceTree = "<group>"; };
 		B12C51111C4CCF8B00BDDDD0 /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
 		B12C51121C4CCF8B00BDDDD0 /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
 		B12C51131C4CCF8B00BDDDD0 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -476,6 +479,8 @@
 				890B3A751CAA61C9008B1A6C /* UIImage+Resizable.m */,
 				890B3A761CAA61C9008B1A6C /* UIView+Frame.h */,
 				890B3A771CAA61C9008B1A6C /* UIView+Frame.m */,
+				89F60CF11CACD0FD0023BF9A /* CALayer+Xib.h */,
+				89F60CF21CACD0FD0023BF9A /* CALayer+Xib.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1088,6 +1093,7 @@
 			files = (
 				B12C517B1C4CD13900BDDDD0 /* UIScrollView+MJExtension.m in Sources */,
 				B12C516D1C4CD13900BDDDD0 /* MJRefreshComponent.m in Sources */,
+				89F60CF31CACD0FD0023BF9A /* CALayer+Xib.m in Sources */,
 				B12C51721C4CD13900BDDDD0 /* MJRefreshAutoStateFooter.m in Sources */,
 				B1D073AC1C1E9265005AD0C0 /* SDWebImageDownloaderOperation.m in Sources */,
 				89D652BA1C984AA400606C70 /* BXItem.m in Sources */,
