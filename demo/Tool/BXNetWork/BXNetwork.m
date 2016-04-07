@@ -89,6 +89,31 @@
     
 }
 
+#pragma mark - Form URL-Encoded方式post提交数据
++ (void)postWithUrl:(NSString *)url parameters:(id)parameters success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock {
+    // 网络请求类
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    // 解析格式 : 不设置具体的解析格式,只需要拿到数据
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    //设置超时时间
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 30.f;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
+    /** 参数
+     1，请求路径
+     2，请求参数
+     3，成功的block
+     4，失败的block
+     */
+    [manager POST:url parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        successBlock(responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        failureBlock(error);
+    }];
+}
+
 #pragma mark - JSON方式post提交数据
 + (void)postJSONWithUrl:(NSString *)url parameters:(id)parameters success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock
 {
